@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'fastlane' }
+    agent { label 'fastlane-osx' }
     stages {
         stage('Install bundle') {
             steps {

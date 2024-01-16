@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Install bundle') {
             steps {
-                bat 'bundle install'
+                sh 'bundle install'
             }
         }
         stage('Run fastlane') {
             steps {
-                bat 'bundle exec fastlane beta'
+                sh 'bundle exec fastlane beta'
             }
         }
     }
